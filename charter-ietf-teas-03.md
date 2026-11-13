@@ -68,9 +68,9 @@ The TEAS working group is chartered to deliver the following:
 3. Maintenance of previously delivered TE architecture and RSVP-TE specifications (including the abstraction and distribution of TE information between domains, GMPLS E-NNI, associated LSPs, and protection), and requirements and protocol extensions for additional protection mechanisms as needed.
 4. RSVP-TE enhancements, covering scalability, security, and extensions to realize distributed bandwidth management over different forwarding planes.
 5. Architecture, YANG data models, and applicability documents for IETF Network Slice Services, Network Resource Partitions and their realization in IP/MPLS and SR networks. This includes slice controller interfaces and the mapping to external slice definitions (e.g., 3GPP 5G).
-6. Power-aware traffic engineering: architecture, metrics, path placement strategies, and signaling mechanisms to allow TE networks to reduce or manage power consumption.
-7. Multipath traffic engineering (MPTE): architecture, RSVP-TE signaling, and YANG data model for establishing and managing TE DAGs (Directed Acyclic Graphs) and Junctions.
-8. Gap analysis of TE-related QoS and service-assurance requirements of emerging use cases; any resulting protocol work is carried out in the WG that owns the protocol.
+6. Power-aware traffic engineering: architecture, path placement strategies, and signaling mechanisms to allow TE networks to reduce or manage power consumption.
+7. Multipath traffic engineering (MPTE): if consensus is reached, specification of the architecture, RSVP-TE signaling, and YANG data model for establishing and managing TE DAGs (Directed Acyclic Graphs) and Junctions.
+8. If consensus is reached, gap analysis of TE-related QoS and service-assurance requirements of emerging use cases; any resulting protocol work is carried out in the WG that owns the protocol.
 
 Requirements may be documented in stand-alone RFCs, may be folded into architecture or solutions RFCs, may be recorded on a wiki, or may be documented in an Internet-Draft that is not progressed to RFC.
 
@@ -83,9 +83,9 @@ The TEAS WG will coordinate with the following working groups:
 - With the IDR WG on the use of BGP-LS in TE environments.
 - With the DetNet WG on mechanisms (YANG models and protocols) to support DetNets.
 - With the SPRING WG on TE architecture and, where appropriate, TE-related protocol extensions.
-- With the 6MAN and SRv6OPS WGs on IPv6 and SRv6 aspects of TE signaling.
+- With the 6MAN and SRv6OPS WGs on TE specific IPv6 and SRv6 aspects.
 - With the ONSEN WG on service and network abstraction models. YANG models already adopted by TEAS (including the network slice and ACTN models) remain in TEAS, and TEAS will route future service/network abstraction-layer modeling that is not TE-specific to ONSEN.
-- With the NMOP WG on operational network management issues, telemetry, and network topology modeling efforts.
+- With the NMOP WG on TE specific operational network management issues, telemetry, and network topology modeling efforts.
 - With the GREEN WG and other energy-related efforts on power and energy metrics.
 - With the TSVWG on QoS-related mechanisms.
 
@@ -104,7 +104,7 @@ Checked on the datatracker (12 Nov 2026):
 
 ## 5. Open points for you and the chairs
 
-1. **MPTE scope.** Item 7 is now worded as a firm deliverable (no "evaluate" or "if consensus" qualifier), so adoption of MPTE work is covered by the charter. Note that the IESG and the WG can still reject drafts on technical merit. A charter can only make the work in scope, not guarantee acceptance.
+1. **MPTE scope.** Item 7 is conditioned on WG consensus ("if consensus is reached"). This is the usual charter convention for work that isn't yet adopted, and it matches how the WG will treat the drafts anyway.
 2. **6G QoS.** Included as "gap analysis" only. Drop item 8 if the chairs don't want to signal that scope yet.
 3. **Individual drafts.** The charter names themes, not individual drafts. Deliverable 4 now reads generally ("scalability, security, and extensions to realize distributed bandwidth management over different forwarding planes"), so check that RSVP resource notifications and RSVP-TE over SRv6 are still clearly in scope once adopted. Deliverable (d) covers new forwarding planes in general.
 4. **Milestones.** The datatracker milestones page also needs a refresh once the text is agreed. I did not review the current milestones.
