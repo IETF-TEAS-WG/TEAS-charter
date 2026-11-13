@@ -47,7 +47,7 @@ Basis: current charter text (as pasted), the 26 active WG drafts and 35 publishe
 
 ## 3. Proposed revised charter text
 
-SEE https://github.com/IETF-TEAS-WG/TEAS-charter/edit/recharter/charter-ietf-teas-03.md 
+[charter-ietf-teas-03.md](./charter-ietf-teas-03.md)
 
 ## 4. Coordination list changes
 
